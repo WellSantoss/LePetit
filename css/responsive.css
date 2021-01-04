@@ -1,0 +1,178 @@
+@media (max-width: 1060px) {
+   .sobre .sobre-flex {
+      display: flex;
+      flex-direction: column-reverse;
+   }
+
+   .sobre .text {
+      max-width: 100%;
+      margin-top: 30px;
+      margin-right: 0;
+   }
+
+   .sobre .img img {
+      margin: 0 auto;
+   }
+
+   .chef .chef-flex {
+      display: block;
+   }
+
+   .chef .img img {
+      margin: 0 auto;
+   }
+
+   .chef .content {
+      margin-left: 0;
+      max-width: 100%;
+      margin-top: 30px;
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+
+   .chef .sociais {
+      margin-bottom: 20px;
+   }
+}
+
+@media (max-width: 768px) {
+   .sobre .text {
+      text-align: center;
+   }
+
+   .chef .text {
+      text-align: center;
+   }
+
+   .cardapio h3 {
+      text-align: center;
+   }
+
+   .cardapio .content {
+      flex-wrap: wrap;
+   }
+
+   .cardapio .item {
+      max-width: 400px;
+      margin: 0 auto;
+   }
+
+   .cardapio .item + .item {
+      margin: 30px auto 0px auto;
+   }
+
+   .cardapio .item img {
+      width: 400px;
+   }
+
+   .reservas .content {
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+
+   .reservas form {
+      margin-left: 0;
+      width: 100%;
+   }
+
+   .reservas .info {
+      text-align: center;
+      margin-top: 30px;
+   }
+
+   .reservas .sociais {
+      justify-content: center;
+   }
+}
+
+@media (max-width: 554px) {
+   .main .header {
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   .main .header a.logo {
+      margin-bottom: 20px;
+   }
+
+   .main .quote {
+      margin: 80px auto 60px auto;
+   }
+}
+
+@media (max-width: 425px) {
+   .container {
+      max-width: 385px;
+   }
+
+   h1 {
+      font-size: 3rem;
+   }
+}
+
+@media (max-width: 320px) {
+   .container {
+      max-width: 320px;
+   }
+
+   h1 {
+      font-size: 2.25rem;
+   }
+
+   h2 {
+      font-size: 1.5rem;
+   }
+
+   h2::before {
+      margin-bottom: 0;
+   }
+
+   .main .header {
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+
+   .main .header a.logo {
+      margin-bottom: 20px;
+      font-size: 2rem;
+   }
+
+   .main .menu a {
+      padding: 8px 10px;
+      margin: 0 5px;
+      font-size: 0.875rem;
+   }
+
+   .main .menu ul li:last-child a {
+      border: 1px solid var(--primary-color);
+      border-radius: 8px;
+      padding: 5px 10px;
+      margin-left: 8px;
+   }
+
+   .main .quote {
+      margin: 80px auto 60px auto;
+   }
+
+   .cardapio h3 {
+      font-size: 1.25rem;
+   }
+
+   .cardapio h3::before {
+      margin-bottom: 2px;
+   }
+
+   .cardapio a.button {
+      width: 240px;
+      font-weight: 500;
+      font-size: 0.875rem;
+   }
+
+   .reservas .form-flex {
+      display: block;
+   }
+
+   .reservas .form-flex .item + .item {
+      margin-left: 0px;
+   }
+}

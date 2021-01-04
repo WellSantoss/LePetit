@@ -1,0 +1,408 @@
+:root {
+   --background-color: #f9f0e1;
+   --primary-color: #ff6347;
+   --title-color: #1d1d1d;
+   --text-color: #292929;
+   --white: #fff;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+img {
+   max-width: 100%;
+   display: block;
+}
+
+body {
+   background: var(--background-color);
+}
+
+body,
+input,
+textarea,
+button {
+   font-family: "Noto Sans JP", sans-serif;
+}
+
+p {
+   color: var(--text-color);
+}
+
+h1 {
+   font-family: "Playfair Display", serif;
+   font-size: 4rem;
+   text-transform: uppercase;
+   color: var(--white);
+   text-align: center;
+}
+
+h2 {
+   font-family: "Playfair Display", serif;
+   font-size: 2.25rem;
+   text-align: center;
+   margin-bottom: 30px;
+   text-transform: uppercase;
+   color: var(--title-color);
+}
+
+h2::before {
+   content: "";
+   display: inline-block;
+   width: 18px;
+   height: 18px;
+   margin-right: 15px;
+   background: url(../assets/detail.svg) no-repeat center;
+   margin-bottom: 3px;
+}
+
+section {
+   padding: 25px 0;
+}
+
+.container {
+   max-width: 1140px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin: 0 auto;
+}
+
+/* Header */
+.main {
+   height: 100vh;
+   background: url(../assets/background.jpg) no-repeat center;
+   background-size: cover;
+   padding-top: 10px;
+   margin-bottom: 25px;
+}
+
+.main .header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.main .header a {
+   color: var(--white);
+   font-family: "Playfair Display", serif;
+   font-size: 2.25rem;
+}
+
+.main .menu ul {
+   display: flex;
+}
+
+.main .menu a {
+   padding: 8px 10px;
+   margin: 0 5px;
+   color: var(--white);
+   font-size: 1rem;
+   position: relative;
+   transition: background 400ms;
+}
+
+.main .menu a.hover::after {
+   content: "";
+   position: absolute;
+   left: 50%;
+   bottom: 0;
+   transform: translateX(-50%) scaleX(0);
+   transform-origin: 50% 50%;
+   width: 100%;
+   height: 2px;
+   background: var(--primary-color);
+   transition: transform 250ms;
+}
+
+.main .menu a.hover:hover::after {
+   transform: translateX(-50%) scaleX(1);
+}
+
+.main .menu ul li:last-child a {
+   border: 1px solid var(--primary-color);
+   border-radius: 8px;
+   padding: 5px 20px;
+}
+
+.main .menu ul li:last-child a:hover {
+   background-color: var(--primary-color);
+}
+
+.main .content {
+   height: calc(100vh - 58px);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.main .quote {
+   max-width: 260px;
+   margin: 80px auto 0px auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.main .quote p {
+   font-family: "Playfair Display", serif;
+   font-size: 1.5rem;
+   font-style: italic;
+   text-align: center;
+   color: var(--white);
+}
+
+.main .quote cite {
+   color: var(--white);
+   font-size: 1rem;
+   text-transform: uppercase;
+   margin-top: 20px;
+   font-style: normal;
+}
+
+/* Sobre */
+.sobre .sobre-flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+.sobre .text {
+   max-width: 610px;
+   margin-right: 20px;
+}
+
+.sobre .text strong {
+   color: var(--text-color);
+}
+
+.sobre .text p + strong {
+   display: block;
+   margin-top: 10px;
+}
+
+.sobre .text p {
+   margin-top: 8px;
+}
+
+/* O Chef */
+.chef .chef-flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+.chef .content {
+   margin-left: 20px;
+   max-width: 680px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.chef .content .text p {
+   margin-bottom: 8px;
+}
+
+.chef .sociais {
+   display: flex;
+   justify-content: flex-end;
+}
+
+.chef .sociais a + a {
+   margin-left: 15px;
+}
+
+/* Cardápio */
+.cardapio h3 {
+   font-family: "Playfair Display", serif;
+   font-size: 1.5rem;
+   margin-bottom: 20px;
+   color: var(--title-color);
+}
+
+.cardapio h3::before {
+   content: "";
+   display: inline-block;
+   width: 10px;
+   height: 10px;
+   margin-right: 10px;
+   background: url(../assets/detail2.svg) no-repeat center;
+   margin-bottom: 3px;
+}
+
+.cardapio .content {
+   display: flex;
+   justify-content: space-between;
+}
+
+.cardapio .item {
+   max-width: 350px;
+   margin: 0;
+}
+
+.cardapio .item + .item {
+   margin-left: 20px;
+}
+
+.cardapio .item span {
+   display: block;
+   font-size: 0.875rem;
+   font-weight: 500;
+   margin-bottom: 8px;
+   text-align: center;
+   color: var(--text-color);
+}
+
+.cardapio .item h4 {
+   font-size: 1.125rem;
+   font-weight: 700;
+   margin: 10px 0 5px 0;
+   color: var(--title-color);
+}
+
+.cardapio a.button {
+   display: block;
+   width: 300px;
+   font-weight: 500;
+   border: 2px solid var(--primary-color);
+   color: var(--title-color);
+   padding: 15px 0;
+   border-radius: 8px;
+   text-align: center;
+   margin: 40px auto 0 auto;
+   transition: 400ms;
+}
+
+.cardapio a.button:hover {
+   color: var(--white);
+   background: var(--primary-color);
+}
+
+/* Reservas */
+.reservas .content {
+   display: flex;
+   justify-content: space-between;
+}
+
+.reservas form {
+   max-width: 540px;
+   flex: 1;
+   margin-left: 20px;
+   display: flex;
+   flex-direction: column;
+}
+
+.reservas form label {
+   display: block;
+   font-size: 0.875rem;
+   font-weight: 500;
+   margin-bottom: 5px;
+   color: var(--text-color);
+}
+
+.reservas form input {
+   background: none;
+   border: 1px solid var(--primary-color);
+   padding: 10px 15px;
+   border-radius: 8px;
+   width: 100%;
+   margin-bottom: 15px;
+   color: var(--text-color);
+   font-size: 1rem;
+}
+
+.reservas form input:focus {
+   outline: none;
+   box-shadow: 0px 0px 0px 1px var(--primary-color);
+}
+
+.reservas .form-flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+.reservas .form-flex .item {
+   flex: 1;
+}
+
+.reservas .form-flex .item + .item {
+   margin-left: 20px;
+}
+
+.reservas form button {
+   padding: 10px 25px;
+   background: var(--primary-color);
+   color: var(--white);
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   outline: none;
+   letter-spacing: 0.1em;
+   margin: 5px auto 0 auto;
+   transition: 400ms;
+   font-size: 1rem;
+   font-weight: 500;
+}
+
+.reservas form button:hover {
+   font-weight: 500;
+   background: none;
+   box-shadow: 0px 0px 0px 1px var(--primary-color);
+   color: var(--title-color);
+}
+
+.reservas .info {
+   max-width: 540px;
+}
+
+.reservas .info h4 {
+   font-size: 1.125rem;
+   font-weight: 500;
+   color: var(--title-color);
+}
+
+.reservas .info p + p {
+   margin-top: 8px;
+}
+
+.reservas .info .contato {
+   margin-top: 15px;
+}
+
+.reservas .sociais {
+   display: flex;
+   margin-top: 15px;
+   align-self: flex-end;
+}
+
+.reservas .sociais a + a {
+   display: inline-block;
+   margin-left: 15px;
+}
+
+/* Footer */
+footer {
+   background: var(--text-color);
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 25px;
+}
+
+footer p {
+   color: var(--white);
+   text-align: center;
+}
+
+/* Animações */
+.js .js-anime {
+   opacity: 0;
+   transform: translate3d(0, 100px, 0);
+   transition: 600ms;
+}
+
+.js .js-anime.ativo {
+   opacity: 1;
+   transform: translate3d(0, 0, 0);
+}
