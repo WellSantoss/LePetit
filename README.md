@@ -6,7 +6,7 @@ Site fictício desenvolvido como forma de estudo a partir de layout criado por m
 ---
 
 ## Resultado
-[![Image from Gyazo](https://i.gyazo.com/1d33f1b2dedc60f52a5f191bef53aa9f.gif)](https://gyazo.com/1d33f1b2dedc60f52a5f191bef53aa9f)
+[![Image from Gyazo](https://i.gyazo.com/c4442aebc86e6a135e9529c46ed2f491.gif)](https://gyazo.com/c4442aebc86e6a135e9529c46ed2f491)
 
 Resultado final: https://wellsantoss.github.io/LePetit/
 
